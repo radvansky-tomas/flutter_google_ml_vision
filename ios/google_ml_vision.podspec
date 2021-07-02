@@ -22,10 +22,10 @@ Plugin for Google ML Kit
   s.dependency 'Flutter'
   s.platform = :ios, '11.0'
   
-  s.dependency 'GoogleMLKit/BarcodeScanning', '~> 2.1.0'
-  s.dependency 'GoogleMLKit/FaceDetection', '~> 2.1.0'
-  s.dependency 'GoogleMLKit/ImageLabeling', '~> 2.1.0'
-  s.dependency 'GoogleMLKit/TextRecognition', '~> 2.1.0'
+  s.dependency 'GoogleMLKit/BarcodeScanning', '< 3.0'
+  s.dependency 'GoogleMLKit/FaceDetection', '< 3.0'
+  s.dependency 'GoogleMLKit/ImageLabeling', '< 3.0'
+  s.dependency 'GoogleMLKit/TextRecognition', '< 3.0'
   
   # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
